@@ -149,6 +149,10 @@
         .neon-border:hover::before {
             opacity: 1;
         }
+        .relative-position{
+            position: relative;
+            z-index: 1;
+        }
 
         /* Cyber card */
         .cyber-card {
@@ -382,6 +386,7 @@
                         <a href="#about" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">ABOUT</a>
                         <a href="#experience" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">EXPERIENCE</a>
                         <a href="#skills" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">SKILLS</a>
+                        <a href="#projects" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">PROJECTS</a>
                         <a href="#certifications" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">CERTIFICATIONS</a>
                         <a href="#contact" class="text-gray-300 hover:text-cyber-blue transition duration-300 font-medium">CONTACT</a>
                     </div>
@@ -399,6 +404,7 @@
                 <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">ABOUT</a>
                 <a href="#experience" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">EXPERIENCE</a>
                 <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">SKILLS</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">PROJECTS</a>
                 <a href="#certifications" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">CERTIFICATIONS</a>
                 <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-cyber-blue hover:bg-cyan-900 hover:bg-opacity-30 transition duration-300">CONTACT</a>
             </div>
@@ -762,6 +768,45 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative hex-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text-animated" style="font-family: 'Orbitron', sans-serif;">
+                <i class="fas fa-project-diagram mr-4"></i>PROJECTS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Project 1: CSV Playground Backend -->
+                <div class="cyber-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-cyber-blue mb-3" style="font-family: 'Orbitron', sans-serif;">
+                            <i class="fas fa-database mr-2"></i>AI CSV data generator
+                        </h3>
+                        <p class="text-gray-300 mb-4">An AI-powered data generation platform supporting multiple AI providers (OpenAI, Groq, Google Gemini) with variable quality levels for different use cases. Generated data is persisted in MongoDB and can be exported in multiple formats (JSON, CSV).</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="https://aistartupbox.github.io/CSVPlayground_UI/data-generator" target="_blank" class="cyber-button px-6 py-2 rounded-lg font-bold text-white transition duration-300 flex items-center gap-2">
+                            <i class="fas fa-external-link-alt"></i>View Project
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2: AI Resume Analyzer -->
+                <div class="cyber-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-cyber-purple mb-3" style="font-family: 'Orbitron', sans-serif;">
+                            <i class="fas fa-file-alt mr-2"></i>AI Resume Analyzer
+                        </h3>
+                        <p class="text-gray-300 mb-4">An intelligent web application that helps users optimize their resumes for Applicant Tracking Systems (ATS). Users can upload their resumes, paste a job description, and receive detailed feedback to improve their chances of landing an interview.</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="https://gowthams05.github.io/resume-analysis/" target="_blank" class="cyber-button px-6 py-2 rounded-lg font-bold text-white transition duration-300 flex items-center gap-2">
+                            <i class="fas fa-external-link-alt"></i>View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Certifications Section -->
     <section id="certifications" class="py-24 relative hex-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -826,7 +871,6 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-xl font-bold text-cyber-purple mb-1" style="font-family: 'Orbitron', sans-serif;">B.E. in CSE</h3>
-                            <p class="text-gray-300 font-medium">Jaya Engineering College</p>
                             <p class="text-gray-500 text-sm mt-1">Anna University</p>
                             <p class="text-cyber-purple font-semibold mt-2">2010 – 2014</p>
                         </div>
@@ -846,7 +890,7 @@
             <div class="max-w-5xl mx-auto">
                 <div class="cyber-card rounded-2xl p-8 md:p-12">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="space-y-6">
+                        <div class="space-y-6 relative-position">
                             <div class="flex items-start group cursor-pointer">
                                 <div class="bg-gradient-to-br from-cyan-500 to-blue-600 p-4 rounded-lg group-hover:scale-110 transition-transform">
                                     <i class="fas fa-map-marker-alt text-white text-2xl"></i>
@@ -863,7 +907,7 @@
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="font-bold text-cyber-purple mb-1 text-lg" style="font-family: 'Orbitron', sans-serif;">PHONE</h3>
-                                    <a href="#" class="text-gray-300 hover:text-cyber-purple transition duration-300">Not Available</a>
+                                    <a href="tel:" class="text-gray-300 hover:text-cyber-purple transition duration-300">Not Mentioned</a>
                                 </div>
                             </div>
 
@@ -878,14 +922,14 @@
                             </div>
                         </div>
 
-                        <div class="space-y-6">
+                        <div class="space-y-6 relative-position">
                             <div class="flex items-start group cursor-pointer">
                                 <div class="bg-gradient-to-br from-cyan-500 to-blue-600 p-4 rounded-lg group-hover:scale-110 transition-transform">
                                     <i class="fab fa-linkedin text-white text-2xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="font-bold text-cyber-blue mb-1 text-lg" style="font-family: 'Orbitron', sans-serif;">LINKEDIN</h3>
-                                    <a href="https://www.linkedin.com/in/gowtham-s-081776166/" target="_blank" class="text-gray-300 hover:text-cyber-blue transition duration-300 break-all">linkedin.com</a>
+                                    <a href="https://www.linkedin.com/in/gowtham-subramanian-081776166/" target="_blank" class="text-gray-300 hover:text-cyber-blue transition duration-300 break-all">linkedin.com</a>
                                 </div>
                             </div>
 
